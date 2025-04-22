@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symulator Milionera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <header>
+      <h1>Symulator Milionera</h1>
+      <p>Poziom: <span id="level">1</span></p>
+    </header>
+    <main>
+      <div id="stats">
+        <p>Twoje pieniądze: <span id="money">0</span> $</p>
+        <p>Pasywny dochód: <span id="income">0</span> $/s</p>
+      </div>
+      <button id="click-button">Zarabiaj pieniądze</button>
+      <section id="upgrades">
+        <h2>Ulepszenia</h2>
+        <button class="upgrade" data-cost="50" data-income="1">Kup Pracownika (50$)</button>
+        <button class="upgrade" data-cost="200" data-income="5">Kup Biuro (200$)</button>
+        <button class="upgrade" data-cost="1000" data-income="50">Kup Fabrykę (1000$)</button>
+      </section>
+      <section id="investments">
+        <h2>Inwestycje</h2>
+        <button class="investment" data-cost="5000" data-income="100">Kup Apartament (5000$)</button>
+        <button class="investment" data-cost="20000" data-income="500">Kup Akcje (20,000$)</button>
+      </section>
+    </main>
+    <footer>
+      <input type="password" id="mod-code" placeholder="Wpisz kod cheatu">
+      <div id="mod-menu" style="display: none;">
+        <h2>Mod Menu</h2>
+        <button id="add-money">Dodaj 1000$</button>
+        <button id="unlock-all">Odblokuj Wszystko</button>
+        <button id="speed-up">Przyspiesz Grę</button>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
