@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odliczanie do końca lekcji</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock">
+        <h1>Zegar</h1>
+        <div id="currentTime"></div>
+    </div>
+
+    <div class="countdown">
+        <h1>Odliczanie do końca lekcji</h1>
+        <div id="countdownTimer"></div>
+    </div>
+
+    <div class="conversions">
+        <h1>Przeliczniki czasu</h1>
+        <p>1 minuta = <span id="minutesToSeconds"></span> sekund</p>
+        <p>1 godzina = <span id="hoursToMinutes"></span> minut</p>
+        <p>1 godzina = <span id="hoursToSeconds"></span> sekund</p>
+    </div>
+
+    <div id="animationContainer" class="animation"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
