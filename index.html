@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Money Simulator</title>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Money Simulator</h1>
+    </header>
+    <main>
+      <div id="stats">
+        <p>Money: $<span id="money">0</span></p>
+        <p>Job: <span id="job">Unemployed</span></p>
+      </div>
+      <div id="actions">
+        <button onclick="earnMoney()">Earn Money</button>
+        <button onclick="openShop()">Shop</button>
+        <button onclick="openBank()">Bank</button>
+        <button onclick="toggleModMenu()">Mod Menu</button>
+      </div>
+    </main>
+    <div id="mod-menu" class="hidden">
+      <h2>Mod Menu</h2>
+      <label for="mod-code">Enter Code:</label>
+      <input type="password" id="mod-code">
+      <button onclick="checkModCode()">Submit</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
