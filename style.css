@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.clock, .countdown, .conversions {
+    margin-top: 20px;
+}
+
+#currentTime, #countdownTimer {
+    font-size: 2rem;
+    color: #333;
+}
+
+.animation {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.animation div {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: red;
+        transform: scale(1);
+    }
+    50% {
+        background-color: yellow;
+        transform: scale(1.5);
+    }
+    100% {
+        background-color: red;
+        transform: scale(1);
+    }
+}
